@@ -1,7 +1,7 @@
 
 import random
 
-
+# It's a main function
 def create_arrays(n):
     # this  main array will contain little arrays
     main_arr = []
@@ -38,7 +38,7 @@ def sort_arrays(main_arr):
 
     return main_arr
 
-
+# function to sort array
 def merge_sort(arr):
     # if arr consists of 1 element, it means it has already sorted
 
@@ -57,7 +57,7 @@ def merge_sort(arr):
     # merge sorted halfs
     return merge_arrays(left_sorted, right_sorted)
 
-
+# funct to merge arrays
 def merge_arrays(left, right):
     merge_array = []
     # find left and right borders
@@ -82,4 +82,5 @@ def merge_arrays(left, right):
         j += 1
     return merge_array
 
+print(create_arrays(3))
 
